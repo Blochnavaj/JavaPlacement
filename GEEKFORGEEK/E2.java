@@ -1,8 +1,7 @@
+//Program to find the minimum (or maximum) element of an array take array in user input 
 package GEEKFORGEEK;
 
-import java.util.Scanner;
-import java.util.Arrays;
-import java.math.*;
+import java.util.*;
 
 public class E2 {
   public static void main(String[] args) {
@@ -17,11 +16,20 @@ public class E2 {
       my_Array[i] = sc.nextInt();
     }
 
-    Arrays.sort(my_Array);
+    int max = Integer.MIN_VALUE;
+    int min = Integer.MAX_VALUE;
 
     // output
-
-    System.out.println(" min " + my_Array[0] + " max " + my_Array[my_Array.length - 1]);
+    for (int i = 0; i < my_Array.length; i++) {
+      if (my_Array[i] < min) {
+        min = my_Array[i];
+      }
+      if (my_Array[i] > max) {
+        max = my_Array[i];
+      }
+    }
+    System.out.println("the largest values of" + max);
+    System.out.println("the smallest values of" + min);
 
   }
 }
