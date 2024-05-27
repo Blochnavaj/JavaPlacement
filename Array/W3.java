@@ -21,7 +21,6 @@ public class W3 {
 
     Arrays.sort(stringArray);
     System.out.println(Arrays.toString(stringArray));
-
   }
 
 }
