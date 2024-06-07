@@ -25,7 +25,7 @@ public class main {
                 sb.append("o");
                 sb.append("c");
                 sb.append("h");
-                System.out.println(sb);
+                System.out.println(sb.length());
 
         }
 
